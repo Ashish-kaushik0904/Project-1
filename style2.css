@@ -1,0 +1,179 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, #74ABE2, #5563DE);
+  color: #222;
+}
+
+/* Navbar */
+nav {
+  background: linear-gradient(90deg, #0d47a1, #1976d2);
+  color: white;
+  padding: 18px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+nav h1 {
+  margin: 0;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 8px 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffeb3b;
+  border-bottom: 2px solid #ffeb3b;
+  padding-bottom: 3px;
+}
+
+/* Section Styling */
+section {
+  padding: 50px 60px;
+  background: rgba(255, 255, 255, 0.95);
+  margin: 30px auto;
+  border-radius: 12px;
+  max-width: 1000px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+section:hover {
+  transform: scale(1.01);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* Headings */
+h2 {
+  color: #0d47a1;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 26px;
+}
+
+/* Booking Form */
+form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, select, button {
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+button {
+  background: linear-gradient(90deg, #4CAF50, #2e7d32);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-weight: bold;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #43a047, #1b5e20);
+  transform: scale(1.05);
+}
+
+/* Tables */
+#search-train {
+  padding: 12px;
+  margin-bottom: 25px;
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid #aaa;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 14px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background: #1976d2;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background: #f5f5f5;
+}
+
+tr:hover {
+  background: #e3f2fd;
+  transition: 0.3s;
+}
+
+/* Features Section */
+.features-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+}
+
+.feature-card {
+  background: #e3f2fd;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  transition: 0.3s ease;
+}
+
+.feature-card:hover {
+  background: #bbdefb;
+  transform: translateY(-6px);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: linear-gradient(90deg, #0d47a1, #1976d2);
+  color: white;
+  padding: 15px;
+  font-size: 16px;
+}
+
+/* Animations */
+.fade-in { animation: fadeIn 1.2s ease-in; }
+.slide-up { animation: slideUp 1.2s ease-in; }
+.zoom-in { animation: zoomIn 1.2s ease-in; }
+
+@keyframes fadeIn { from {opacity: 0;} to {opacity: 1;} }
+@keyframes slideUp { from {transform: translateY(20px); opacity: 0;} to {transform: translateY(0); opacity: 1;} }
+@keyframes zoomIn { from {transform: scale(0.95); opacity: 0;} to {transform: scale(1); opacity: 1;} }
